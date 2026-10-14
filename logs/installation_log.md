@@ -35,12 +35,15 @@ Installed and import-verified:
 ## Qiskit Aer
 - Installation: Completed
 - Import check: Successful
-- Verified command:
-  python -c "from qiskit_aer import AerSimulator; print('Qiskit Aer import successful')"
-- Bell-state smoke test: Pending - assigned to teammate.
-- QAOA circuit validation: Pending.
+- Bell-state fallback validation: Passed
+- QAOA circuit operations validation: Passed
+- Small noiseless QAOA validation: Passed
+- Depolarizing-noise QAOA validation: Passed
+- Validation script: aer_validation_test.py
+- Evidence: evidence/aer_validation_evidence.png
 
-## Handoff
-Qiskit Aer is the proposed simulator fallback.
-The Bell-state smoke test and subsequent QAOA validation must be
-completed before declaring the simulator fully validated.
+## Simulator Fallback Limitations
+- Qiskit Aer was validated as the simulator fallback for the tested circuits.
+- Validation does not prove compatibility with HybridQ.
+- HybridQ installation remained unsuccessful due to the documented dependency/build issues.
+- The validated Aer fallback should therefore be treated as a separate simulator implementation.
