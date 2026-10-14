@@ -17,14 +17,16 @@ Installed and import-verified:
 ## PySA
 - Installation: Completed
 - Import check: Successful
-- Actual QUBO smoke test: Pending
+- Actual QUBO smoke test: Completed successfully
+- QUBO solver API inspected from installed PySA package.
+- Smoke test produced 20 samples and successfully computed sample energy.
 
-## HybridQ — Attempt 1
+## HybridQ - Attempt 1
 - Command: python -m pip install hybridq
 - Result: Failed during package build requirements discovery.
 - Error: FileNotFoundError for requirements.txt in the temporary package directory.
 
-## HybridQ — Attempt 2
+## HybridQ - Attempt 2
 - Command: python -m pip install git+https://github.com/nasa/hybridq
 - Result: Failed while installing the cotengra dependency.
 - Resolved HybridQ commit: 7e7d96f280c2ae2b03cc86a94e5f6745da1870f6
@@ -35,7 +37,7 @@ Installed and import-verified:
 - Import check: Successful
 - Verified command:
   python -c "from qiskit_aer import AerSimulator; print('Qiskit Aer import successful')"
-- Bell-state smoke test: Pending — assigned to teammate.
+- Bell-state smoke test: Pending - assigned to teammate.
 - QAOA circuit validation: Pending.
 
 ## Handoff
