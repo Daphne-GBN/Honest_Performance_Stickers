@@ -5,13 +5,10 @@ framework.
 
 ## Current Status
 
-- Python 3.10 virtual environment created.
-- Supporting scientific Python libraries installed and import-verified.
-- PySA import verified; QUBO smoke test is pending.
-- HybridQ installation attempted twice; both attempts failed.
-- Qiskit Aer installed and its AerSimulator import verified.
-- Bell-state smoke test pending.
-- QAOA circuit validation pending.
+- PySA QUBO smoke test completed (20 samples, energies computed).
+- Bell-state smoke test passed on Qiskit Aer.
+- Qiskit Aer validated: QAOA circuit operations, small noiseless QAOA, and depolarizing-noise QAOA.
+- Dataset prepared: 280 Max-Cut instances (140 tuning, 140 benchmark) with brute-force optima — see logs/dataset_log.md.
 
 ## Setup
 
