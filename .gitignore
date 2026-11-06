@@ -1,7 +1,9 @@
 .venv/
+.venv-hq/
 venv/
 __pycache__/
 *.py[cod]
 .env
 .vscode/
 .idea/
+desktop.ini
